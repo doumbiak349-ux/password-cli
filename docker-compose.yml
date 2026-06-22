@@ -1,0 +1,8 @@
+services:
+  password-audit:
+    build:
+      context: ./docker
+    container_name: password-audit-service
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
